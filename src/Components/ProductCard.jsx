@@ -35,11 +35,6 @@ function ProductCard({ data, items, setItems }) {
                             </div>
 
                             <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                {/* <div className="text-center">
-                                <button className="btn btn-outline-dark mt-auto" onClick={handleAddToCart}>
-                                    {items?.some(i => i?.id === it?.id) ? "Remove from cart" : "Add to cart"}
-                                </button> 
-                            </div>*/}
                                 {product.option === 1 ? (<div className="text-center"><a className='btn btn-outline-dark mt-auto'>View options</a></div>) :
                                     (<div className="text-center">
                                         <a className={`btn ${items?.some(i => i?.id === product?.id) ? "btn-outline-danger" : "btn-outline-dark"} mt-auto`}
